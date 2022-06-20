@@ -7,7 +7,9 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "slicemachine": "start-slicemachine"
+        "slicemachine": "start-slicemachine",
+        "pushDevToProd": "git checkout master && git merge dev && git push origin master && git checkout dev",
+        "gitUpdateAll": "git pull && git checkout master && git pull && git checkout dev"
     },
     "dependencies": {
         "@prismicio/client": "^6.6.0",
